@@ -1,5 +1,5 @@
     <section id="about" class="about">
-      <h2 class="about__heading">コンセプト</h2>
+      <h2 class="about__heading">制作に寄せて</h2>
       <div class="one-col">
         <?php
         $posts = get_posts([
