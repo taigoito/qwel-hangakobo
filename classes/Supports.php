@@ -1,5 +1,5 @@
 <?php
-namespace Qwel_Theme;
+namespace Hangakobo;
 
 trait Supports {
   // テーマサポート機能

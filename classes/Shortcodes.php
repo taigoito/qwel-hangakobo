@@ -1,5 +1,5 @@
 <?php
-namespace Qwel_Theme;
+namespace Hangakobo;
 
 trait Shortcodes {
   // ショートコード登録
@@ -14,8 +14,8 @@ trait Shortcodes {
     // デフォルト値
     $atts = shortcode_atts(
       [
-        'year' => '2022',
-        'text' => 'Qwel'
+        'year' => '2007',
+        'text' => 'Osano Naoko'
       ],
       $atts
     );

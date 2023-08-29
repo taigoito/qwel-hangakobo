@@ -6,10 +6,10 @@ $rootFontSize:   16px;
 $fixedFontSize:  3.84vw; // 4vw以下推奨
 
 // 基準幅
-$gridBase:       6rem;
+$gridBase:       5rem; // Scale grid system to 5/6
 
 // 画像アスペクト比 (高さ/幅)
-$imgAspectRatio: 3 / 4;
+$imgAspectRatio: 1;
 
 // 各BP別用途
 // xs: 1カラム (4グリッド: 24rem)
@@ -31,9 +31,9 @@ $imgAspectRatio: 3 / 4;
 // ブレイクポイント (BP)
 // padding: clamp(12px, 2%, 24px)を左右に付与し、コンテナが収まる
 $breakpoints:    (
-  sm:              600px, // コンテナ576px WordPressブロックエディタのBP
-  md:              900px, // コンテナ864px theme.json settings.layout.contentSize の値
-  lg:              1200px // コンテナ1152px theme.json settings.layout.wideSize の値
+  sm:              500px, // コンテナ576px WordPressブロックエディタのBP
+  md:              750px, // コンテナ864px theme.json settings.layout.contentSize の値
+  lg:              1000px // コンテナ1152px theme.json settings.layout.wideSize の値
 );
 
 // 余白定義
@@ -60,9 +60,9 @@ $spacingValues:  (
 // 行を生成することで、コンテナの端とコンテンツ間が、それぞれ1.5rem空く仕様
 $gutter:         0.75rem;
 $containerPad:   (
-  sm:              $gutter,
-  md:              var(--wp--custom--spacing--container-pad, $gutter),
-  lg:              var(--wp--custom--spacing--container-pad-wide, $gutter)
+  sm:              10px,
+  md:              var(--wp--custom--spacing--container-pad, 15px),
+  lg:              var(--wp--custom--spacing--container-pad-wide, 20px)
 );
 
 // コンテナ生成

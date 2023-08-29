@@ -1,16 +1,16 @@
 <?php
 /**
- * Qwel Two functions
+ * Hangakobo functions
  * Author: Taigo Ito (https://qwel.design/)
  * Location: Fukui, Japan
- * @package Qwel-Two
+ * @package Hangakobo-Two
  */
 
 /*
  * テーマのパス, URI
  */
-define( 'QWEL_THEME_DIR', get_template_directory() );
-define( 'QWEL_THEME_URI', get_template_directory_uri() );
+define( 'HANGAKOBO_DIR', get_template_directory() );
+define( 'HANGAKOBO_URI', get_template_directory_uri() );
 
 
 /*
@@ -18,10 +18,10 @@ define( 'QWEL_THEME_URI', get_template_directory_uri() );
  */
 spl_autoload_register(
 	function( $classname ) {
-		if ( strpos( $classname, 'Qwel_Theme' ) === false ) return;
+		if ( strpos( $classname, 'Hangakobo' ) === false ) return;
 		$classname = str_replace( '\\', '/', $classname );
-		$classname = str_replace( 'Qwel_Theme/', '', $classname );
-		$file      = QWEL_THEME_DIR . '/classes/' . $classname . '.php';
+		$classname = str_replace( 'Hangakobo/', '', $classname );
+		$file      = HANGAKOBO_DIR . '/classes/' . $classname . '.php';
 		if ( file_exists( $file ) ) {
 			require $file;
 		}
@@ -31,10 +31,10 @@ spl_autoload_register(
 /*
  * Hookする関数群を継承して登録
  */
-class Qwel {
-	use	\Qwel_Theme\Supports,
-		\Qwel_Theme\Scripts,
-		\Qwel_Theme\Shortcodes;
+class Hangakobo {
+	use	\Hangakobo\Supports,
+		\Hangakobo\Scripts,
+		\Hangakobo\Shortcodes;
 		
 	public function __construct() {
 		// テーマサポート機能
@@ -49,6 +49,6 @@ class Qwel {
 }
 
 /**
- * Qwel start!
+ * Hangakobo start!
  */
-new Qwel();
+new Hangakobo();
