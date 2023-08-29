@@ -4,3 +4,6 @@
  * Location: Fukui, Japan
  * @package Hangakobo
  */
+
+import Artwork from "./artwork.js";
+new Artwork();
