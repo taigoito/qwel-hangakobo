@@ -167,14 +167,6 @@ button, input, select, textarea {
 .wp-block-social-links {
   margin: 0;
 }
-.wp-block-post-featured-image {
-  text-align: center;
-}
-.wp-block-post-featured-image img {
-  aspect-ratio: 4/3;
-  -o-object-fit: cover;
-     object-fit: cover;
-}
 .wp-block-post-terms {
   padding-left: var(--wp--custom--spacing--small, 0.75rem);
 }
@@ -183,9 +175,6 @@ button, input, select, textarea {
 }
 .wp-block-post-terms__separator {
   padding-left: var(--wp--custom--spacing--small, 0.75rem);
-}
-.wp-block-post-excerpt__more-text {
-  text-align: right;
 }
 .wp-block-image {
   overflow: hidden;
@@ -203,7 +192,6 @@ button, input, select, textarea {
   outline: 0;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   cursor: pointer;
   transition: all 0.25s ease-in-out;
@@ -358,7 +346,6 @@ button, input, select, textarea {
   outline: 0;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   cursor: pointer;
   transition: all 0.25s ease-in-out;
@@ -489,7 +476,6 @@ button, input, select, textarea {
   outline: 0;
   -webkit-user-select: none;
      -moz-user-select: none;
-      -ms-user-select: none;
           user-select: none;
   cursor: pointer;
   transition: all 0.25s ease-in-out;
@@ -634,14 +620,23 @@ button, input, select, textarea {
   align-items: center;
   gap: 0 !important;
 }
-.postList.--list .postItem__image {
-  flex: 3 1 18rem;
+@media (min-width: 900px) {
+  .postList.--list .postItem__image {
+    flex: 3 1 18rem;
+  }
 }
-.postList.--list .postItem__image .wp-block-post-featured-image {
+.postList.--list .postItem__image figure {
   margin: 0;
 }
-.postList.--list .postItem__content {
-  flex: 6 1 36rem;
+.postList.--list .postItem__image img {
+  aspect-ratio: 1.3333333333;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (min-width: 900px) {
+  .postList.--list .postItem__content {
+    flex: 6 1 36rem;
+  }
 }
 .postList.--list .postItem__heading {
   font-size: var(--wp--custom--font-size--medium, 1.17rem);

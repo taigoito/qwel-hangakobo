@@ -18,15 +18,6 @@
   }
 
   &-post {
-    &-featured-image {
-      text-align: center;
-      
-      img {
-        aspect-ratio: 4 / 3;
-        object-fit: cover;
-      }
-    }
-
     &-terms {
       padding-left: space(2);
 
@@ -36,12 +27,6 @@
 
       &__separator {
         padding-left: space(2);
-      }
-    }
-
-    &-excerpt {
-      &__more-text {
-        text-align: right;
       }
     }
   }

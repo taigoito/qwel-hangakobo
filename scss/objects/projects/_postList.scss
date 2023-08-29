@@ -42,15 +42,20 @@
       gap: 0 !important;
 
       &__image {
-        @include col(3, ture);
-
-        .wp-block-post-featured-image {
+        @include col(3, ture, "md");
+        
+        figure {
           margin: 0;
+        }
+
+        img {
+          aspect-ratio: 1 / $imgAspectRatio;
+          object-fit: cover;
         }
       }
 
       &__content {
-        @include col(6, ture);
+        @include col(6, ture, "md");
       }
 
       &__heading {
