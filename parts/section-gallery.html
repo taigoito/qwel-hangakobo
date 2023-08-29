@@ -1,5 +1,22 @@
-<!-- wp:group {"style":{"spacing":{"padding":{"top":"3rem","bottom":"3rem"}}},"className":"section__inner"} -->
-<div id="access" class="wp-block-group section__inner" style="padding-top:3rem;padding-bottom:3rem"><!-- wp:html -->
-<div class="embed"><iframe class="" src="https://www.google.com/maps/embed"></iframe></div>
+<!-- wp:group {"style":{"spacing":{"padding":{"top":"3rem","bottom":"3rem"}}},"className":"section__inner","layout":{"type":"constrained"}} -->
+<div class="wp-block-group section__inner" style="padding-top:3rem;padding-bottom:3rem">
+<!-- wp:group {"align":"wide","className":"section__container","layout":{"type":"constrained"}} --><div class="wp-block-group alignwide section__container">
+<!-- wp:heading {"align":"wide","className":"section__heading"} -->
+<h2 class="alignwide section__heading">ギャラリー</h2>
+<!-- /wp:heading --></div>
+<!-- /wp:group -->
+
+<!-- /wp:html -->
+<div id="gallery" class="gallery">
+  <div class="slider" data-aspect-ratio="1.25" data-gap="36">
+    <figure class="slider__inner"></figure>
+    <template id="sliderTemplate">
+      <figure class="slider__item">
+        <img class="slider__image">
+        <figcaption class="slider__caption"></figcaption>
+      </figure>
+    </template>
+  </div>
+</div>
 <!-- /wp:html --></div>
 <!-- /wp:group -->
