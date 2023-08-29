@@ -2,18 +2,17 @@
  * Layout - Header
  */
 
-$headerHeight: 4.5rem;
+$headerHeight: 6rem;
 
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
   height: $headerHeight;
 
   &__inner {
     height: 100%;
-    background-color: $bodyBg;
-  }
-
-  &__container {
-    @include container();
-    height: 100%;
+    padding: space(2);
   }
 }

@@ -2,7 +2,7 @@
 
 // 固有のフォント設定
 $fontFamilySansSerif:  "游ゴシック", "Yu Gothic", sans-serif;
-$fontFamilySerif:      "游明朝", "Yu Mincho", serif;
+$fontFamilySerif:      "UD Digi Kyokasho N-R", "UDDigiKyokasho R", sans-serif;
 $fontWeightSansSerif:  500; // 游ゴシック固有
 $fontWeightSerif:      400;
 //$fontFamilySansSerif:  "Noto Sans JP", sans-serif;
@@ -22,20 +22,21 @@ $fontSizes:            (
 );
 
 // body
-$fontFamilyBase:       $fontFamilySansSerif;
-$fontWeightBase:       $fontWeightSansSerif;
+$fontFamilyBase:       $fontFamilySerif;
+$fontWeightBase:       $fontWeightSerif;
 $lineHeightBase:       var(--wp--custom--line-height--large, 1.8);
 $letterSpacingBase:    0;
 
 // セクション
 $sectionMarginTop:     space(0);
 $sectionMarginBottom:  space(3);
+$sectionBorder:        1px dotted themeColor('dark');
 
 // 見出し
 $headingMarginTop:     space(3);
 $headingMarginBottom:  space(2);
-$headingFontFamily:    $fontFamilySansSerif;
-$headingFontWeight:    $fontWeightSansSerif;
+$headingFontFamily:    $fontFamilySerif;
+$headingFontWeight:    $fontWeightSerif;
 $h1FontSize:           map-get($fontSizes, "xxl");
 $h2FontSize:           map-get($fontSizes, "xl");
 $h3FontSize:           map-get($fontSizes, "lg");
