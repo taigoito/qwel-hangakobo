@@ -237,6 +237,10 @@
 			"title": "Section Info"
 		},
 		{
+			"name": "section-products",
+			"title": "Section Products"
+		},
+		{
 			"name": "section-gallery",
 			"title": "Section Gallery"
 		},

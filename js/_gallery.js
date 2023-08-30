@@ -4,7 +4,7 @@
  * Location: Fukui, Japan
  */
 
-import Slider from './slider.js';
+import Slider from './_slider.js';
 
 export default class Gallery {
 

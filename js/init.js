@@ -5,8 +5,11 @@
  * @package Hangakobo
  */
 
-import Artwork from "./artwork.js";
+import Artwork from './_artwork.js';
 new Artwork();
 
-import Gallery from "./gallery.js";
+import Clock from './_clock.js';
+new Clock();
+
+import Gallery from './_gallery.js';
 new Gallery();

@@ -243,7 +243,7 @@ button, input, select, textarea {
 /**
  * Layout
  */
-.section__container, .titleArea__container, .main__container, .--flexItem_12, .--flexItem_11, .--flexItem_10, .--flexItem_9, .--flexItem_8, .--flexItem_7, .--flexItem_6, .--flexItem_5, .--flexItem_4, .--flexItem_3, .--flexItem_2, .postList.--list .postItem__content, .postList.--list .postItem__image, .postItem.--single .postItem__content, .postItem.--single .postItem__image, .main__sidebar, .main__content {
+.section__container, .clock, .titleArea__container, .main__container, .--flexItem_12, .--flexItem_11, .--flexItem_10, .--flexItem_9, .--flexItem_8, .--flexItem_7, .--flexItem_6, .--flexItem_5, .--flexItem_4, .--flexItem_3, .--flexItem_2, .postList.--list .postItem__content, .postList.--list .postItem__image, .postItem.--single .postItem__content, .postItem.--single .postItem__image, .clock__section, .clock__base, .main__sidebar, .main__content {
   position: relative;
   flex: auto;
   gap: 0;
@@ -252,12 +252,12 @@ button, input, select, textarea {
   margin-right: auto;
 }
 
-.--flexItem_12, .--flexItem_11, .--flexItem_10, .--flexItem_9, .--flexItem_8, .--flexItem_7, .--flexItem_6, .--flexItem_5, .--flexItem_4, .--flexItem_3, .--flexItem_2, .postList.--list .postItem__content, .postList.--list .postItem__image, .postItem.--single .postItem__content, .postItem.--single .postItem__image, .main__sidebar, .main__content {
+.--flexItem_12, .--flexItem_11, .--flexItem_10, .--flexItem_9, .--flexItem_8, .--flexItem_7, .--flexItem_6, .--flexItem_5, .--flexItem_4, .--flexItem_3, .--flexItem_2, .postList.--list .postItem__content, .postList.--list .postItem__image, .postItem.--single .postItem__content, .postItem.--single .postItem__image, .clock__section, .clock__base, .main__sidebar, .main__content {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
 }
 
-.section__container, .titleArea__container, .main__container {
+.section__container, .clock, .titleArea__container, .main__container {
   padding-left: var(--wp--custom--spacing--container-pad-wide, 20px);
   padding-right: var(--wp--custom--spacing--container-pad-wide, 20px);
 }
@@ -388,6 +388,93 @@ button, input, select, textarea {
 .btn.--secondaryLight {
   background-color: var(--wp--preset--color--secondary-light, #e08594);
   color: var(--wp--preset--color--darkest, #262626);
+}
+
+/*
+ * Component - Clock
+ */
+.clock {
+  max-width: 1000px;
+}
+@media (min-width: 750px) {
+  .clock {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+}
+.clock__base {
+  padding: 0;
+}
+@media (min-width: 750px) {
+  .clock__base {
+    flex: 0 1 25rem;
+  }
+}
+@media (min-width: 750px) {
+  .clock__base {
+    order: 1;
+  }
+}
+.clock__image {
+  box-shadow: 36px 18px 18px rgba(0, 0, 0, 0.3);
+}
+.clock__main {
+  position: absolute;
+  top: 34.5%;
+  left: 25.75%;
+}
+.clock__balloon {
+  position: absolute;
+  top: -2rem;
+  left: -2rem;
+  width: 15.75rem;
+  height: 9rem;
+  font-weight: bold;
+  font-size: 1.5rem;
+  text-align: center;
+}
+@media (min-width: 750px) {
+  .clock__balloon {
+    top: -3rem;
+    left: -25%;
+    width: 21rem;
+    height: 12rem;
+    font-weight: bold;
+    font-size: 2rem;
+  }
+}
+.clock__balloon canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0.85;
+}
+.clock__balloon p {
+  position: absolute;
+  top: 25%;
+  left: 0;
+  width: 100%;
+}
+@media (min-width: 750px) {
+  .clock__section {
+    flex: 0 1 20rem;
+  }
+}
+@media (min-width: 1000px) {
+  .clock__section {
+    flex: 0 1 25rem;
+  }
+}
+@media (min-width: 750px) {
+  .clock__section {
+    order: 0;
+  }
+}
+.clock__description {
+  font-size: var(--wp--custom--font-size--small, 0.875rem);
+  line-height: var(--wp--custom--line-height--x-large, 2);
+  letter-spacing: 0.04rem;
 }
 
 /**
