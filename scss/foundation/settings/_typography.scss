@@ -37,9 +37,9 @@ $headingMarginTop:     space(3);
 $headingMarginBottom:  space(2);
 $headingFontFamily:    $fontFamilySerif;
 $headingFontWeight:    $fontWeightSerif;
-$h1FontSize:           map-get($fontSizes, "xxl");
-$h2FontSize:           map-get($fontSizes, "xl");
-$h3FontSize:           map-get($fontSizes, "lg");
+$h1FontSize:           map-get($fontSizes, "xl");
+$h2FontSize:           map-get($fontSizes, "lg");
+$h3FontSize:           map-get($fontSizes, "md"); // bold
 $h4FontSize:           map-get($fontSizes, "md");
 $h5FontSize:           map-get($fontSizes, "nr"); // bold
 $h6FontSize:           map-get($fontSizes, "sm"); // bold
@@ -55,4 +55,4 @@ $smallLetterSpacing:   0.04rem;
 
 // リンク文字の装飾
 $linkDecoration:       none;
-$linkHoverDecoration:  underline;
+$linkHoverDecoration:  none;

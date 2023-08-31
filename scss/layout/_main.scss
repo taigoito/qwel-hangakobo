@@ -3,16 +3,14 @@
  */
 
 .main {
+  &__header,
   &__container {
-    @extend %__containerLg;
-  }
+    &:not(.--md) {
+      @extend %__containerLg;
+    }
 
-  &__content {
-    @include col(6, true);
-  }
-
-  &__sidebar {
-    @include col(3, false, "md");
-
+    &.--md {
+      @extend %__containerMd;
+    }
   }
 }

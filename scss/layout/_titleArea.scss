@@ -3,11 +3,8 @@
  */
 
 .titleArea {
-  &__container {
-    @extend %__containerLg;
-  }
-
-  &__title {
-    margin: 0;
-  }
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  border-bottom: $sectionBorder;
+  text-align: center;
 }

@@ -1,31 +1,19 @@
 <!-- wp:template-part {"slug":"header","tagName":"header","className":"header"} /-->
 
-<!-- wp:group {"tagName":"main","className":"main","layout":{"inherit":false}} -->
-<main id="main" class="wp-block-group main"><!-- wp:group {"tagName":"header","className":"main__header"} -->
-<header class="wp-block-group main__header"><!-- wp:cover {"overlayColor":"primary-light","isDark":false,"className":"titleArea","style":{"spacing":{"padding":{"right":"0rem","left":"0rem"}}}} -->
-<div class="wp-block-cover is-light titleArea" style="padding-right:0rem;padding-left:0rem"><span aria-hidden="true" class="wp-block-cover__background has-primary-light-background-color has-background-dim-100 has-background-dim"></span><div class="wp-block-cover__inner-container"><!-- wp:group {"className":"titleArea__inner","layout":{"inherit":true,"type":"constrained"}} -->
-<div class="wp-block-group titleArea__inner"><!-- wp:group {"align":"wide","className":"titleArea__container"} -->
-<div class="wp-block-group alignwide titleArea__container"><!-- wp:post-title {"level":1,"className":"titleArea__title","fontSize":"x-large"} /--></div>
-<!-- /wp:group --></div>
-<!-- /wp:group --></div></div>
-<!-- /wp:cover -->
+<!-- wp:group {"tagName":"main","className":"main","layout":{"type":"constrained"}} -->
+<main id="main" class="wp-block-group main">
 
-<!-- wp:group {"layout":{"type":"constrained"}} -->
-<div class="wp-block-group"><!-- wp:group {"align":"wide","layout":{"type":"default"}} -->
-<div class="wp-block-group alignwide"><!-- wp:shortcode -->
-[breadcrumb]
-<!-- /wp:shortcode --></div>
-<!-- /wp:group --></div>
-<!-- /wp:group --></header>
-<!-- /wp:group -->
+<!-- wp:template-part {"slug":"page-header","tagName":"header","align":"wide","className":"main__header"} /-->
 
-<!-- wp:group {"className":"main__body","layout":{"inherit":true,"type":"constrained"}} -->
-<div class="wp-block-group main__body"><!-- wp:post-content /--></div>
+<!-- wp:group {"align":"wide","className":"main__body","layout":{"inherit":true,"type":"constrained"}} -->
+<div class="wp-block-group alignwide main__body"><!-- wp:group {"align":"wide","className":"main__container","layout":{"type":"constrained"}} -->
+<div class="wp-block-group alignwide main__container"><!-- wp:group {"align":"wide","className":"postItem","layout":{"type":"default"}} -->
+<div class="wp-block-group alignwide postItem"><!-- wp:post-content {"className":"postItem__content"} /--></div>
+<!-- /wp:group --></div>
+<!-- /wp:group --></div>
 <!-- /wp:group --></main>
 <!-- /wp:group -->
 
-<!-- wp:html -->
 <div class="cover"></div>
-<!-- /wp:html -->
 
 <!-- wp:template-part {"slug":"footer","tagName":"footer","className":"footer"} /-->
