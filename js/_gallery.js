@@ -32,16 +32,21 @@ export default class Gallery {
     // テンプレート取得
     const template = document.getElementById('sliderTemplate');
 
-    // アイテム生成
+    // アイテム抽出
+    const selected = [];
     items.forEach((item) => {
+      if (item.showOnGallery) selected.unshift(item);
+    });
+
+    // アイテム生成
+    selected.forEach((item) => {
       const figure = template.content.cloneNode(true);
       const img = figure.querySelector('img');
       const caption = figure.querySelector('figcaption');
-      
       const src = `/data/uploads/${item.name}s.png`;
+
       img.setAttribute('src', src);
       caption.textContent = item.title;
-
       this._inner.appendChild(figure);
 
     });

@@ -1,7 +1,7 @@
 /*
 Theme Name: Hangakobo
 Description: This is a theme for Hanga Yubin-sha.
-Version: 3.0
+Version: 3.1
 Requires PHP: 7.4
 Author: Taigo Ito
 Author URI: https://qwel.design/
@@ -616,7 +616,7 @@ button, input, select, textarea {
 .slider {
   position: relative;
   width: 100%;
-  height: 78.125vmin;
+  height: 90vmin;
   overflow: hidden;
 }
 .slider__inner {
@@ -632,7 +632,7 @@ button, input, select, textarea {
   flex: 1 1 auto;
   order: 0;
   margin: 0;
-  padding: 3rem;
+  padding: 0 0 var(--wp--custom--spacing--large, 3rem);
   opacity: 1;
   transition: opacity 0.15s linear;
 }
@@ -730,8 +730,8 @@ button, input, select, textarea {
   margin-top: 3rem;
 }
 .hero__content {
-  width: min(83.33vmin, 32rem);
-  height: min(66.66vmin, 24rem);
+  width: min(83.33vw, 32rem);
+  height: min(83.33vh, 24rem);
 }
 .hero__content img {
   width: 100%;

@@ -25,13 +25,19 @@ export default class Artwork {
 
 
   _setArtwork(items) {
-    const r = 99; // サンプル[私の住むまち] 
+    const selected = [];
+    items.forEach((item) => {
+      if (item.showOnFront) selected.push(item);
+    });
+
+    const len = selected.length;
+    const r = Math.floor(Math.random() * len);
     const img = this._elem.querySelector('img');
     const caption = this._elem.querySelector('figcaption');
+    const src = `/data/uploads/${selected[r].name}s.png`;
 
-    const src = `/data/uploads/${items[r].name}s.png`;
     img.setAttribute('src', src);
-    caption.textContent = items[r].title;
+    caption.textContent = selected[r].title;
 
   }
 

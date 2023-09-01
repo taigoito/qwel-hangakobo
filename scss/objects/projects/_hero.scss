@@ -9,8 +9,8 @@
   margin-top: $headerHeight / 2;
 
   &__content {
-    width: min(83.33vmin, 32rem);
-    height: min(66.66vmin, 24rem);
+    width: min(83.33vw, 32rem);
+    height: min(83.33vh, 24rem);
 
     img {
       width: 100%;
